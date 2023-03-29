@@ -48,14 +48,14 @@ class Solution
 public:
     bool detectCapitalUse(string word)
     {
-        int cnt = 0; // counter to store the number of capital letters in the word
+        int cnt = 0; // ! counter to store the number of capital letters in the word
         for (int i = 0; i < word.size(); i++)
         {
             if (isupper(word[i]))
-                cnt++; // increase counter if letter at index i is uppercase
+                cnt++; // ? increase counter if letter at index i is uppercase
         }
         if (cnt == word.size())
-        { // if all letters are uppercase, return true
+        { // * if all letters are uppercase, return true
             return true;
         }
         else if (cnt == 0)
